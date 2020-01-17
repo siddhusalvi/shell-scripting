@@ -1,9 +1,7 @@
 #!/bin/bash -x
 
-if (($RANDOM % 2 == 0))
-then
-    echo "Employee is present"
-else
-   echo "Employee is absent"
-fi
+rate=20
+hours=8
 
+salary=`expr $rate \* $hours`
+echo "salary is $rate * $hours : $salary"
